@@ -30,7 +30,10 @@ body:
     attributes:
       label: 次回リリース前に対応必須
       description: 本項目が選択されている場合は、次回リリース前に対応してください。
-      default: false
+      options:
+        - label: 対応必須
+          value: required
+          default: true
   - type: textarea
     id: reproduction_expected
     attributes:
