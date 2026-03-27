@@ -1,0 +1,53 @@
+name: 機能欠落
+description: 既存機能に不足がある、または追加が必要な機能を報告するテンプレートです。期待する動作や不足している機能について詳細に記入してください
+title: [機能欠落] タイトルを入力してください
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: feature_description
+    attributes:
+      label: 機能の説明
+      description: どの機能が不足しているか、またはどのような機能が必要かを明確に説明してください。
+    validations:
+      required: true
+  - type: select
+    id: urgency
+    attributes:
+      label: 緊急度
+      description: 対応の緊急度を選択してください。
+      options:
+        - label: 高
+          value: high
+        - label: 中
+          value: medium
+        - label: 低
+          value: low
+    validations:
+      required: true
+  - type: checkbox
+    id: must_before_next_release
+    attributes:
+      label: 次回リリース前に対応必須
+      description: 本項目が選択されている場合は、次回リリース前に対応してください。
+      default: false
+  - type: textarea
+    id: reproduction_expected
+    attributes:
+      label: 再現／期待される動作
+      description: 現在の挙動と、期待される挙動を比較して記載してください。
+  - type: textarea
+    id: use_case
+    attributes:
+      label: 利用シーン
+      description: この機能が必要になる具体的なケースやユーザーの利用シーンを記載してください。
+  - type: textarea
+    id: impact
+    attributes:
+      label: 影響範囲
+      description: この機能がないとどのような影響が出るかを説明してください。
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: 追加情報
+      description: その他、改善案や参考情報があれば記入してください。
