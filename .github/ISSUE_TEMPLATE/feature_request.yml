@@ -20,7 +20,7 @@ body:
         - 高
         - 中
         - 低
-      default: 2
+      default: 1
     validations:
       required: true
   - type: checkboxes
@@ -29,9 +29,7 @@ body:
       label: 次回リリース前に対応必須
       description: 本項目が選択されている場合は、次回リリース前に対応してください。
       options:
-        - 対応必須
-      default:
-        - 対応必須
+        - label: 対応必須
   - type: textarea
     id: reproduction_expected
     attributes:
