@@ -20,7 +20,7 @@ body:
         - 高
         - 中
         - 低
-      default: 中
+      default: 2
     validations:
       required: true
   - type: checkboxes
