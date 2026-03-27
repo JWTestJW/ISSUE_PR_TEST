@@ -17,12 +17,10 @@ body:
       label: 緊急度
       description: 対応の緊急度を選択してください。
       options:
-        - label: 高
-          value: high
-        - label: 中
-          value: medium
-        - label: 低
-          value: low
+        - 高
+        - 中
+        - 低
+      default: 中
     validations:
       required: true
   - type: checkboxes
@@ -31,9 +29,9 @@ body:
       label: 次回リリース前に対応必須
       description: 本項目が選択されている場合は、次回リリース前に対応してください。
       options:
-        - label: 対応必須
-          value: required
-          default: true
+        - 対応必須
+      default:
+        - 対応必須
   - type: textarea
     id: reproduction_expected
     attributes:
