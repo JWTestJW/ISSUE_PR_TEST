@@ -11,7 +11,7 @@ body:
       description: どの機能が不足しているか、またはどのような機能が必要かを明確に説明してください。
     validations:
       required: true
-  - type: select
+  - type: dropdown
     id: urgency
     attributes:
       label: 緊急度
@@ -25,7 +25,7 @@ body:
           value: low
     validations:
       required: true
-  - type: checkbox
+  - type: checkboxes
     id: must_before_next_release
     attributes:
       label: 次回リリース前に対応必須
